@@ -8,6 +8,7 @@ var roof;
 //Create multiple bobs, mulitple ropes varibale here
 var ball1, ball2, ball3, ball4, ball5;
 var rope1, rope2, rope3, rope4, rope5;
+var world;
 
 function setup() {
 	createCanvas(800, 600);
@@ -18,6 +19,9 @@ function setup() {
 
 	var ball_options = {
 		restitution: 0.8
+		isStatic = false
+		friction: 0.01
+		density: 0.04
 	}
 
 	ball1 = Bodies.circle(300, 50, 10, ball_options);
